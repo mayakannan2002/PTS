@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import videoframe from './../../../assets/Product/video1.mp4';
+import videoframe from './../../../assets/Product/video5.mp4';
 
 const ShoppableVideos = () => {
   const navigate = useNavigate();
@@ -8,10 +8,10 @@ const ShoppableVideos = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
       <div className="w-full max-w-7xl">
-        {/* Row 1: Heading Only */}
+        {/* Row 1: Heading */}
         <div className="mb-8">
-          <h2 className="text-3xl md:text-4xl">Interactive Shoppable</h2>
-          <h2 className="text-3xl md:text-4xl mt-2">Videos</h2>
+          <h2 className="text-3xl md:text-4xl">Live</h2>
+          <h2 className="text-3xl md:text-4xl mt-2">Edutainment</h2>
         </div>
 
         {/* Row 2: 3 columns */}
@@ -22,9 +22,8 @@ const ShoppableVideos = () => {
           {/* Column 2: Paragraph + Button */}
           <div className="flex flex-col justify-between h-full">
             <p className="text-base text-gray-800 mb-4">
-              Enhance your customers’ shopping journey with interactive
-              shoppable videos. Let viewers click on products directly within
-              the video, making browsing and buying seamless and engaging.
+              Make learning fun and interactive with live trivia, polls, and quizzes.
+              Boost engagement, motivation, and retention through real-time participation and leaderboards.
             </p>
             <button
               onClick={() => navigate("/contact")}
@@ -37,10 +36,8 @@ const ShoppableVideos = () => {
           {/* Column 3: Second Paragraph */}
           <div>
             <p className="text-base text-gray-800">
-              Transform product discovery with shoppable videos—embed clickable
-              links so users can explore and purchase items instantly without
-              leaving the video, creating a fast and immersive shopping
-              experience.
+              Gamify education with interactive challenges that turn passive viewers into active learners.
+              Perfect for training, virtual events, and dynamic classroom experiences.
             </p>
           </div>
         </div>
@@ -53,7 +50,7 @@ const ShoppableVideos = () => {
             muted
             loop
             playsInline
-            className="w-auto h-auto rounded-lg"
+            className="w-full h-200 object-fit rounded-lg"
           />
         </div>
       </div>

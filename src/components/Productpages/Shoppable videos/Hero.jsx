@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import videoframe from './../../../assets/Product/video1.mp4';
+import videoframe from './../../../assets/Product/video1.1.mp4';
 
 const ShoppableVideos = () => {
   const navigate = useNavigate();

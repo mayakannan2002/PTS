@@ -6,13 +6,10 @@ const LiveShoppingCTA = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    // Navigate after slight delay to allow scroll
     setTimeout(() => {
       navigate('/contact');
-    }, 300); // optional delay for smoother effect
+    }, 300);
   };
 
   return (
@@ -20,16 +17,17 @@ const LiveShoppingCTA = () => {
       <div className="max-w-2xl mx-auto">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
-          Launch Your Live Shopping <br className="hidden sm:block" />
-          Journey with Pixalive
+          Get started with live <br className="hidden sm:block" />
+          shopping today.
         </h2>
 
         {/* Subtext */}
         <p className="text-gray-600 text-base mb-8">
-          Captivate your audience in real time and turn engagement into sales.
+          Connect with your audience like never before and <br className="hidden sm:block" />
+          increase your online sales.
         </p>
 
-        {/* Button with scroll and navigate */}
+        {/* Button */}
         <button
           onClick={handleClick}
           className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white text-sm font-medium rounded hover:bg-gray-800 transition"

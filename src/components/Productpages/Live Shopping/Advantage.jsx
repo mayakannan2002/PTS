@@ -1,9 +1,10 @@
 import React from "react";
 
 // Icon imports (replace these paths with the actual ones)
-import interactiveIcon from './../../../assets/Product/icon1.3.png';
-import brandIcon from './../../../assets/Product/icon1.4.png';
-import platformIcon from './../../../assets/Product/icon1.5.png';
+import cmsIcon from './../../../assets/Product/icon4.3.png';
+import dataIcon from './../../../assets/Product/icon4.4.png';
+import liveIcon from './../../../assets/Product/icon4.5.png';
+
 const PixaliveAdvantage = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto sm:px-6 md:px-10 py-12 sm:py-16 text-black text-center">
@@ -13,29 +14,29 @@ const PixaliveAdvantage = () => {
 
       <div className="grid md:grid-cols-3 gap-8 text-left">
         {/* Card 1 */}
-        <div className="border p-6 hover:shadow-lg transition">
-          <img src={interactiveIcon} alt="Interactive Icon" className="w-10 h-10 mb-4" />
-          <h4 className="font-semibold text-lg mt-10  mb-2">Interactive & Shoppable Videos</h4>
+        <div className="border border-gray-300 p-6 hover:shadow-lg transition">
+          <img src={cmsIcon} alt="CMS Icon" className="w-10 h-10 mb-4" />
+          <h4 className="font-semibold text-lg mt-10 mb-2">All-in-One CMS</h4>
           <p className="text-sm text-gray-700">
-            Revolutionize shopping—let users browse and buy directly from your videos.
+            Effortlessly manage your live shopping videos and inventories through an intuitive, all-in-one content system.
           </p>
         </div>
 
         {/* Card 2 */}
-        <div className="border p-6 hover:shadow-lg transition">
-          <img src={brandIcon} alt="Brand Icon" className="w-10 h-10 mb-4" />
-          <h4 className="font-semibold text-lg mt-10 mb-2">Bring Your Brand to Life</h4>
+       <div className="border border-gray-300 p-6 hover:shadow-lg transition">
+          <img src={dataIcon} alt="Data Ownership Icon" className="w-10 h-10 mb-4" />
+          <h4 className="font-semibold text-lg mt-10 mb-2">Full Data Ownership</h4>
           <p className="text-sm text-gray-700">
-            Create deeper connections with interactive content that mirrors the in-store experience online.
+            Maintain complete control over your livestream and audience data—your insights, your rules.
           </p>
         </div>
 
         {/* Card 3 */}
-        <div className="border p-6 hover:shadow-lg transition">
-          <img src={platformIcon} alt="Platform Icon" className="w-10 h-10 mb-4" />
-          <h4 className="font-semibold text-lg mt-10 mb-2">Unified Content Platform</h4>
+        <div className="border border-gray-300 p-6 hover:shadow-lg transition">
+          <img src={liveIcon} alt="Live Video Icon" className="w-10 h-10 mb-4" />
+          <h4 className="font-semibold text-lg mt-10 mb-2">Tailored Live Video Solutions</h4>
           <p className="text-sm text-gray-700">
-            Easily manage videos, live streams, and shopping features—all in one smart dashboard.
+            Have a custom feature in mind? We're ready to bring your unique vision to life.
           </p>
         </div>
       </div>

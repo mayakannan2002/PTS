@@ -1,9 +1,10 @@
 import React from "react";
 
-// Icon imports (replace these paths with the actual ones)
-import interactiveIcon from './../../../assets/Product/icon1.3.png';
-import brandIcon from './../../../assets/Product/icon1.4.png';
-import platformIcon from './../../../assets/Product/icon1.5.png';
+// Updated icons (replace with your actual icon files)
+import whiteLabelIcon from './../../../assets/Product/icon5.4.png';
+import endToEndIcon from './../../../assets/Product/icon5.5.png';
+import lowLatencyIcon from './../../../assets/Product/icon5.6.png';
+
 const PixaliveAdvantage = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto sm:px-6 md:px-10 py-12 sm:py-16 text-black text-center">
@@ -12,30 +13,30 @@ const PixaliveAdvantage = () => {
       </h2>
 
       <div className="grid md:grid-cols-3 gap-8 text-left">
-        {/* Card 1 */}
-        <div className="border p-6 hover:shadow-lg transition">
-          <img src={interactiveIcon} alt="Interactive Icon" className="w-10 h-10 mb-4" />
-          <h4 className="font-semibold text-lg mt-10  mb-2">Interactive & Shoppable Videos</h4>
+        {/* Card 1: White Label Video Streaming */}
+        <div className="border border-gray-300 p-6 hover:shadow-lg transition">
+          <img src={whiteLabelIcon} alt="White Label Icon" className="w-10 h-10 mb-4" />
+          <h4 className="font-semibold text-lg mb-2">White Label Video Streaming</h4>
           <p className="text-sm text-gray-700">
-            Revolutionize shopping—let users browse and buy directly from your videos.
+            Gain full control over your platform, including code, content, and data analytics.
           </p>
         </div>
 
-        {/* Card 2 */}
-        <div className="border p-6 hover:shadow-lg transition">
-          <img src={brandIcon} alt="Brand Icon" className="w-10 h-10 mb-4" />
-          <h4 className="font-semibold text-lg mt-10 mb-2">Bring Your Brand to Life</h4>
+        {/* Card 2: End-to-End Live Streaming Solution */}
+        <div className="border border-gray-300 p-6 hover:shadow-lg transition">
+          <img src={endToEndIcon} alt="End-to-End Icon" className="w-10 h-10 mb-4" />
+          <h4 className="font-semibold text-lg mb-2">End-to-End Live Streaming Solution</h4>
           <p className="text-sm text-gray-700">
-            Create deeper connections with interactive content that mirrors the in-store experience online.
+            Get end-to-end support for your custom live streaming platform — from design to maintenance.
           </p>
         </div>
 
-        {/* Card 3 */}
-        <div className="border p-6 hover:shadow-lg transition">
-          <img src={platformIcon} alt="Platform Icon" className="w-10 h-10 mb-4" />
-          <h4 className="font-semibold text-lg mt-10 mb-2">Unified Content Platform</h4>
+        {/* Card 3: Low Latency Live Video Solution */}
+        <div className="border border-gray-300 p-6 hover:shadow-lg transition">
+          <img src={lowLatencyIcon} alt="Low Latency Icon" className="w-10 h-10 mb-4" />
+          <h4 className="font-semibold text-lg mb-2">Low Latency Live Video Solution</h4>
           <p className="text-sm text-gray-700">
-            Easily manage videos, live streams, and shopping features—all in one smart dashboard.
+            Say goodbye to lag—experience ultra-low latency live streaming for a flawless and seamless viewing experience.
           </p>
         </div>
       </div>

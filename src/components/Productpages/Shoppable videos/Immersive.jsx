@@ -1,5 +1,5 @@
 import React from "react";
-import videofile from './../../../assets/Product/video1.1.mp4';
+import videofile from './../../../assets/Product/video1.mp4';
 
 // Custom icon images
 import cartIcon from './../../../assets/Product/icon1.png';

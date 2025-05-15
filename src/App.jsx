@@ -13,6 +13,7 @@ import ShoppableVideos from "./pages/Shoppablevideos";
 import Interactivevideos from "./pages/Interactivevideos";
 import Livestreaming from "./pages/Livestreaming";
 import Liveshopping from "./pages/Liveshopping";
+import Liveedutainment from "./pages/Liveedutainment";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         <Route path="/products/interactive-branching" element={<Interactivevideos />} />
          <Route path="/products/live-streaming" element={<Livestreaming />} />
           <Route path="/products/live-shopping" element={<Liveshopping />} />
-           <Route path="/products/live-edutainment" element={<ShoppableVideos />} />
+           <Route path="/products/live-edutainment" element={<Liveedutainment/>} />
            
       </Routes>
       <Footer />

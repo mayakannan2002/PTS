@@ -1,17 +1,18 @@
 import React from "react";
-import videofile from './../../../assets/Product/video1.1.mp4';
+import videofile from './../../../assets/Product/video5.1.mp4';
 
-// Custom icon images
-import cartIcon from './../../../assets/Product/icon1.png';
-import videoIcon from './../../../assets/Product/icon1.1.png';
-import insightsIcon from './../../../assets/Product/icon1.2.png';
+// Updated icons (replace with your actual assets)
+import streamIcon from './../../../assets/Product/icon5.png';
+import leaderboardIcon from './../../../assets/Product/icon5.1.png';
+import analyticsIcon from './../../../assets/Product/icon5.2.png';
+import manageIcon from './../../../assets/Product/icon5.3.png';
 
 const VideoCommerceSection = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
       {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-semibold mb-10">
-        Immersive & Interactive Video <br /> Commerce
+        Boost Your Training <br /> Effectiveness
       </h2>
 
       {/* Main content grid */}
@@ -24,41 +25,52 @@ const VideoCommerceSection = () => {
             muted
             loop
             playsInline
-            className="w-full h-auto"
+            className="w-full h-120 object-fill"
           />
         </div>
 
         {/* Text content with icons */}
         <div className="flex flex-col gap-8">
-          {/* Item 1 */}
+          {/* Feature 1 */}
           <div className="flex items-start gap-4">
-            <img src={cartIcon} alt="Cart Icon" className="w-10 h-10 mt-1" />
+            <img src={streamIcon} alt="Interactive Live Streams Icon" className="w-10 h-10 mt-1" />
             <div>
-              <h4 className="font-semibold text-lg">Seamless Video-to-Cart Experience</h4>
+              <h4 className="font-semibold text-lg">Achieve Highly Interactive Live Streams</h4>
               <p className="text-sm text-gray-700 mt-1">
-                Let users shop directly from videos without leaving the screen. Turn product views into instant checkouts.
+                Create immersive live streaming experiences that captivate your audience and encourage participation throughout the session.
               </p>
             </div>
           </div>
 
-          {/* Item 2 */}
+          {/* Feature 2 */}
           <div className="flex items-start gap-4">
-            <img src={videoIcon} alt="Video Icon" className="w-10 h-10 mt-1" />
+            <img src={leaderboardIcon} alt="Trivia Leaderboards Icon" className="w-10 h-10 mt-1" />
             <div>
-              <h4 className="font-semibold text-lg">Immersive & Interactive</h4>
+              <h4 className="font-semibold text-lg">Engage Viewers with Trivia Leaderboards</h4>
               <p className="text-sm text-gray-700 mt-1">
-                Showcase your products in action with engaging, real-life video content that keeps viewers hooked.
+                Ignite a competitive atmosphere by allowing viewers to rise through the ranks in dynamic trivia leaderboards, adding excitement and engagement to every session.
               </p>
             </div>
           </div>
 
-          {/* Item 3 */}
+          {/* Feature 3 */}
           <div className="flex items-start gap-4">
-            <img src={insightsIcon} alt="Insights Icon" className="w-10 h-10 mt-1" />
+            <img src={analyticsIcon} alt="Streaming Analytics Icon" className="w-10 h-10 mt-1" />
             <div>
-              <h4 className="font-semibold text-lg">Actionable Customer Insights</h4>
+              <h4 className="font-semibold text-lg">Simplified Live Streaming Analytics</h4>
               <p className="text-sm text-gray-700 mt-1">
-                Understand viewer behavior and preferences with built-in analytics to refine your marketing strategies.
+                Effortlessly track and analyze viewer interactions through live polls and trivia, helping you gather valuable insights on audience participation during each stream.
+              </p>
+            </div>
+          </div>
+
+          {/* Feature 4 */}
+          <div className="flex items-start gap-4">
+            <img src={manageIcon} alt="Platform Management Icon" className="w-10 h-10 mt-1" />
+            <div>
+              <h4 className="font-semibold text-lg">Streamlined Platform Management</h4>
+              <p className="text-sm text-gray-700 mt-1">
+                Manage all your live streams with ease using a user-friendly content management system, designed for anyone to operate without the need for any programming knowledge.
               </p>
             </div>
           </div>
