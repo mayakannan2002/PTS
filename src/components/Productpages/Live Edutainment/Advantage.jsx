@@ -36,7 +36,7 @@ const PixaliveAdvantage = () => {
           <img src={lowLatencyIcon} alt="Low Latency Icon" className="w-10 h-10 mb-4" />
           <h4 className="font-semibold text-lg mb-2">Low Latency Live Video Solution</h4>
           <p className="text-sm text-gray-700">
-            Say goodbye to lag—experience ultra-low latency live streaming for a flawless and seamless viewing experience.
+            Say goodbye to a lag—experience ultra-low latency live streaming for a flawless and seamless viewing experience.
           </p>
         </div>
       </div>
