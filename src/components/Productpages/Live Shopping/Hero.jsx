@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import videoframe from './../../../assets/Product/video1.mp4';
+import videoframe from './../../../assets/Product/video4.1.mp4';
 
 const ShoppableVideos = () => {
   const navigate = useNavigate();
@@ -8,10 +8,10 @@ const ShoppableVideos = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
       <div className="w-full max-w-7xl">
-        {/* Row 1: Heading Only */}
+        {/* Row 1: Heading */}
         <div className="mb-8">
-          <h2 className="text-3xl md:text-4xl">Interactive Shoppable</h2>
-          <h2 className="text-3xl md:text-4xl mt-2">Videos</h2>
+          <h2 className="text-3xl md:text-4xl">Live</h2>
+          <h2 className="text-3xl md:text-4xl mt-2">Shopping</h2>
         </div>
 
         {/* Row 2: 3 columns */}
@@ -22,9 +22,7 @@ const ShoppableVideos = () => {
           {/* Column 2: Paragraph + Button */}
           <div className="flex flex-col justify-between h-full">
             <p className="text-base text-gray-800 mb-4">
-              Enhance your customers’ shopping journey with interactive
-              shoppable videos. Let viewers click on products directly within
-              the video, making browsing and buying seamless and engaging.
+              Boost conversions with live shopping—blend real-time product demos, chat, and instant buying to create an engaging and immersive e-commerce experience.
             </p>
             <button
               onClick={() => navigate("/contact")}
@@ -34,13 +32,10 @@ const ShoppableVideos = () => {
             </button>
           </div>
 
-          {/* Column 3: Second Paragraph */}
+          {/* Column 3: Paragraph */}
           <div>
             <p className="text-base text-gray-800">
-              Transform product discovery with shoppable videos—embed clickable
-              links so users can explore and purchase items instantly without
-              leaving the video, creating a fast and immersive shopping
-              experience.
+              Transform online shopping with interactive live streams that engage customers, build brand loyalty, and drive sales through real-time interaction and exclusive offers.
             </p>
           </div>
         </div>

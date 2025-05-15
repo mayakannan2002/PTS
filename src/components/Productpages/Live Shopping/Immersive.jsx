@@ -1,17 +1,17 @@
 import React from "react";
-import videofile from './../../../assets/Product/video1.1.mp4';
+import videofile from './../../../assets/Product/video4.mp4';
 
-// Custom icon images
-import cartIcon from './../../../assets/Product/icon1.png';
-import videoIcon from './../../../assets/Product/icon1.1.png';
-import insightsIcon from './../../../assets/Product/icon1.2.png';
+// Updated icons (use existing or replace paths if needed)
+import cartIcon from './../../../assets/Product/icon4.png';
+import videoIcon from './../../../assets/Product/icon4.1.png';
+import insightsIcon from './../../../assets/Product/icon4.2.png';
 
 const VideoCommerceSection = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
       {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-semibold mb-10">
-        Immersive & Interactive Video <br /> Commerce
+        Make Live Shopping Seamless and <br /> Interactive
       </h2>
 
       {/* Main content grid */}
@@ -24,7 +24,7 @@ const VideoCommerceSection = () => {
             muted
             loop
             playsInline
-            className="w-full h-auto"
+            className="w-full h-100 object-cover"
           />
         </div>
 
@@ -32,33 +32,33 @@ const VideoCommerceSection = () => {
         <div className="flex flex-col gap-8">
           {/* Item 1 */}
           <div className="flex items-start gap-4">
-            <img src={cartIcon} alt="Cart Icon" className="w-10 h-10 mt-1" />
+            <img src={cartIcon} alt="Shoppable Icon" className="w-10 h-10 mt-1" />
             <div>
-              <h4 className="font-semibold text-lg">Seamless Video-to-Cart Experience</h4>
+              <h4 className="font-semibold text-lg">In-Stream Shoppable Video</h4>
               <p className="text-sm text-gray-700 mt-1">
-                Let users shop directly from videos without leaving the screen. Turn product views into instant checkouts.
+                Let your audience explore and shop products directly within the live stream through an integrated product catalog—no need to leave the session.
               </p>
             </div>
           </div>
 
           {/* Item 2 */}
           <div className="flex items-start gap-4">
-            <img src={videoIcon} alt="Video Icon" className="w-10 h-10 mt-1" />
+            <img src={videoIcon} alt="Voucher Icon" className="w-10 h-10 mt-1" />
             <div>
-              <h4 className="font-semibold text-lg">Immersive & Interactive</h4>
+              <h4 className="font-semibold text-lg">Live-Exclusive Voucher Codes</h4>
               <p className="text-sm text-gray-700 mt-1">
-                Showcase your products in action with engaging, real-life video content that keeps viewers hooked.
+                Boost conversions by offering special voucher codes that can only be accessed during the live stream.
               </p>
             </div>
           </div>
 
           {/* Item 3 */}
           <div className="flex items-start gap-4">
-            <img src={insightsIcon} alt="Insights Icon" className="w-10 h-10 mt-1" />
+            <img src={insightsIcon} alt="Replay Icon" className="w-10 h-10 mt-1" />
             <div>
-              <h4 className="font-semibold text-lg">Actionable Customer Insights</h4>
+              <h4 className="font-semibold text-lg">Extend Engagement Beyond Live</h4>
               <p className="text-sm text-gray-700 mt-1">
-                Understand viewer behavior and preferences with built-in analytics to refine your marketing strategies.
+                Turn your live shopping sessions into lasting content by saving and republishing them across social platforms as on-demand videos.
               </p>
             </div>
           </div>

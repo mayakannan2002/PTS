@@ -12,6 +12,7 @@ import Features  from "./pages/Features";
 import ShoppableVideos from "./pages/Shoppablevideos";
 import Interactivevideos from "./pages/Interactivevideos";
 import Livestreaming from "./pages/Livestreaming";
+import Liveshopping from "./pages/Liveshopping";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Route path="/products/interactive-videos" element={<ShoppableVideos />} />
         <Route path="/products/interactive-branching" element={<Interactivevideos />} />
          <Route path="/products/live-streaming" element={<Livestreaming />} />
-          <Route path="/products/live-shopping" element={<ShoppableVideos />} />
+          <Route path="/products/live-shopping" element={<Liveshopping />} />
            <Route path="/products/live-edutainment" element={<ShoppableVideos />} />
            
       </Routes>
