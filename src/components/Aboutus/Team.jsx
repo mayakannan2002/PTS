@@ -22,7 +22,7 @@ const team = [
   null,
   { name: "Mohan", role: "Senior Backend Developer", image: Mohan, alt: "Mohan" },
   { name: "Sivakumar", role: "Senior Full Stack Developer", image: Sivakumar, alt: "Sivakumar" },
-  { name: "Mayakannan", role: "Software Developer", image: Mayakannan, alt: "Mayakannan" },
+  { name: "Pavan Kumar B", role: "Senior Backend Developer", image: PavanKumar, alt: "Pavankumar" },
 
   { name: "Vijay K", role: "Front end Developer", image: Vijay, alt: "Vijay" },
   null,
@@ -31,13 +31,13 @@ const team = [
 
   { name: "Kathirvel", role: "Software Developer", image: Kathirvel, alt: "Kathirvel" },
   { name: "Dhivinkumar", role: "Software Developer", image: Dhivinkumar, alt: "Dhivinkumar" },
-  { name: "Bharath Kumar", role: "Software Developer", image: BharathKumar, alt: "Bharath Kumar" },
+  { name: "Mayakannan", role: "Software Developer", image: Mayakannan, alt: "Mayakannan" },
   null,
 
-  { name: "Pavan Kumar", role: "Junior Backend Developer", image: PavanKumar, alt: "Pavan Kumar" },
+  { name: "Bharath Kumar", role: "Software Developer", image: BharathKumar, alt: "Bharath Kumar" },
   { name: "Kaaviyan", role: "Senior Backend Developer", image: Kaaviyan, alt: "Kaaviyan" },
   null,
-  { name: "?", role: "?", image: "", alt: "" },
+  { name: "?", role: "", image: "", alt: "" },
 ];
 
 const TeamSection = () => {
@@ -55,6 +55,7 @@ const TeamSection = () => {
                     <img
                       src={member.image}
                       alt={member.alt}
+                      loading="lazy"
                       className="object-cover w-full h-full"
                     />
                   ) : (
@@ -63,8 +64,8 @@ const TeamSection = () => {
                 </div>
                 {member.name && (
                   <>
-                    <p className="text-[black] font-medium text-center">{member.name}</p>
-                    <p className="text-xs text-[#5D5D5D] text-center">{member.role}</p>
+                    <p className="text-[black] text-[16px] font-medium text-center">{member.name}</p>
+                    <p className="text-[14px] text-[#5D5D5D] text-center">{member.role}</p>
                   </>
                 )}
               </>
@@ -78,7 +79,7 @@ const TeamSection = () => {
       <div className="mt-20 flex justify-center">
 
         <a
-          href="#"
+          href="/contact"
           className="text-4xl  font-bold text-black underline underline-offset-4"
         >
           Join Our Team

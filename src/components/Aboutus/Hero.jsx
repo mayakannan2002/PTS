@@ -14,19 +14,19 @@ const AboutSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-800 mb-12">
         <div>
           <h3 className="font-semibold mb-2">Our Vision</h3>
-          <p className="text-sm text-gray-600">
+          <p className="text-[16px] text-[#5D5D5D]">
             To become one of the most trusted global tech enablers—where ideas are transformed into disruptive digital experiences.
           </p>
         </div>
         <div>
           <h3 className="font-semibold mb-2">Our Mission</h3>
-          <p className="text-sm text-gray-600">
+          <p className="text-[16px] text-[#5D5D5D]">
             At Pixalive Technology Services, our mission is to revolutionize the digital landscape by delivering intelligent, future-ready solutions that solve real-world challenges.
           </p>
         </div>
         <div>
           <h3 className="font-semibold mb-2">Our Goal</h3>
-          <p className="text-sm text-gray-600">
+          <p className="text-[16px] text-[#5D5D5D]">
             We aim to deliver 100+ cutting-edge projects by 2026, expand our presence in global markets, and build a robust ecosystem of products, partners, and platforms.
           </p>
         </div>
@@ -38,13 +38,14 @@ const AboutSection = () => {
           src={Hero}
           alt="Office Workspace"
           className="w-full object-cover"
+          loading='lazy'
         />
       </div>
 
       {/* Our Culture Section */}
       <div>
         <h3 className="font-semibold mb-2">Our Culture</h3>
-        <p className="text-sm text-gray-600 max-w-3xl">
+        <p className="text-[16px] text-[#5D5D5D] max-w-3xl">
           At Pixalive Technology Services, culture is the heartbeat <br />of everything we do.We are not just a team—we are a<br /> tribe of dreamers,doers, and disruptors who believe that <br />innovation begins with people, not just products.
         </p>
       </div>

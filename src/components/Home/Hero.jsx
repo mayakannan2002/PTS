@@ -32,6 +32,7 @@ const Hero = () => {
                         className="w-full sm:max-w-[1260px] h-auto rounded-[12px]"
                         src={hero}
                         alt="hero img"
+                        loading="lazy"
                     />
                 </div>
 

@@ -58,6 +58,7 @@ export default function TeamSection() {
                     src={member.image}
                     alt={member.name}
                     className="w-[300px] h-[364px] object-cover mb-4 mx-auto"
+                    loading='lazy'
                   />
                   <h3 className="font-normal text-[20px]">{member.name}</h3>
                   <p className="text-normal text-[#5D5D5D]">{member.role}</p>
@@ -69,7 +70,7 @@ export default function TeamSection() {
           {/* Explore Link for Mobile */}
           <div className="mt-6 text-center">
             <a
-              href="#"
+              href="/aboutus"
               className="inline-flex items-center justify-center text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group"
             >
               Explore our Teams
@@ -87,6 +88,7 @@ export default function TeamSection() {
                   src={member.image}
                   alt={member.name}
                   className="w-[300px] h-[364px] object-cover mb-4"
+                  loading='lazy'
                 />
                 <h3 className="font-normal text-[20px] text-left">{member.name}</h3>
                 <p className="text-normal text-[#5D5D5D] text-left">{member.role}</p>
@@ -96,7 +98,7 @@ export default function TeamSection() {
             {/* Desktop only: Explore More */}
             <div className="flex items-center justify-center p-4 min-w-[240px]">
               <a
-                href="#"
+                href="/aboutus"
                 className="flex items-center justify-center text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group h-full w-full text-center"
               >
                 Explore our Teams

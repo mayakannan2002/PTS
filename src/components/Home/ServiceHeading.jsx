@@ -19,7 +19,7 @@ const ServiceHeading = () => {
                 {/* Left content */}
                 <div className="w-full lg:w-1/2">
                     <p className="text-base sm:text-lg md:text-xl text-gray-700">
-                       
+
                     </p>
                 </div>
 
@@ -29,12 +29,12 @@ const ServiceHeading = () => {
                         We’ve built long-lasting partnerships with the most ambitious brands across the globe. We’ve built long-lasting partnerships with the most ambitious brands across the globe. We’ve built long-lasting partnerships with the most ambitious brands across the globe.
                     </p>
                     <a
-                                href="/service"
-                                className="inline-flex self-end mt-12 items-center gap-2 text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group"
-                            >
-                                Explore
-                                <span className="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
-                            </a>
+                        href="/service"
+                        className="inline-flex self-end mt-12 items-center gap-2 text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group"
+                    >
+                        Explore
+                        <span className="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
+                    </a>
                 </div>
             </div>
         </div>

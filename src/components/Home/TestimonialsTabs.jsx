@@ -76,6 +76,7 @@ export default function TestimonialsTabs() {
                             src={active.image}
                             alt={active.name}
                             className="rounded-md w-full h-auto object-cover"
+                            loading="lazy"
                         />
                     </div>
 
