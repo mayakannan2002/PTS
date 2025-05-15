@@ -63,7 +63,7 @@ const CardSlider = () => {
   }, []);
 
   return (
-    <div className="w-full py-10 px-4">
+    <div className="w-full py-5 px-4">
   <div className="max-w-screen-xl mx-auto relative px-4 lg:px-12">
     <div
       ref={containerRef}
@@ -74,7 +74,7 @@ const CardSlider = () => {
           key={index}
           className="snap-start min-w-[60%] sm:min-w-[28%] lg:min-w-[26%] max-w-xs flex-shrink-0 border border-gray-200 shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
         >
-          <img src={card.icon} alt="icon" className="w-7 h-7 mb-2" />
+          <img src={card.icon} alt="icon" className="w-7 h-7 mb-2 loading-lazy" />
           <h3 className="text-base font-semibold leading-[180%] text-gray-900 mb-2">
             {card.title}
           </h3>

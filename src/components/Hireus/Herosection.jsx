@@ -31,6 +31,7 @@ const HeroSection = () => {
           src={Hero}
           alt="Pixalive Team Collaboration"
           className="w-full h-auto rounded-xl object-cover"
+          loading="lazy"
         />
       </div>
     </section>

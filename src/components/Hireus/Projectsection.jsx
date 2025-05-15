@@ -1,4 +1,3 @@
-import React from "react";
 import TopLeftImage from "./../../assets/imgs/Hireus/top-left-image.png";
 import BottomRightImage from "./../../assets/imgs/Hireus/bottom-right-image.png";
 
@@ -19,6 +18,7 @@ const SolutionsSection = () => {
             src={TopLeftImage}
             alt="Team working"
             className=" w-full object-cover"
+            loading="lazy"
           />
         </div>
         <div className="md:w-1/2 space-y-4  p-6 ">
@@ -67,6 +67,7 @@ const SolutionsSection = () => {
             src={BottomRightImage}
             alt="Business meeting"
             className="w-full object-cover"
+            loading="lazy"
           />
         </div>
       </div>
