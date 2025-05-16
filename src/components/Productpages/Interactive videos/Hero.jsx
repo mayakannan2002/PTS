@@ -23,7 +23,7 @@ const InteractiveVideoBranching = () => {
           <div className="flex flex-col justify-between h-full">
             <p className="text-base text-gray-800 mb-4">
               Boost engagement with interactive video branching—let viewers make
-              choices that shape the story, turning passive watching into an
+              choices that shape the story,  in turning passive watching into an
               immersive, personalized experience.
             </p>
             <button
