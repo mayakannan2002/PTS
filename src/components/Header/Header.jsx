@@ -47,9 +47,11 @@ const Header = () => {
     };
   }, [menuOpen]);
 
+  const isWhitePath = ['/', '/features', '/hireus', '/aboutus'].includes(location.pathname);
+
   return (
     <>
-      <div className="max-w-[1280px] p-2 mx-auto w-full sm:px-6 lg:px-12 py-4 flex justify-between items-center border-b md:border-b-0">
+      <div className="max-w-[1280px] p-2 mx-auto w-full sm:px-6 lg:px-12 py-4 flex justify-between items-center  md:border-b-0">
         {/* Logo */}
         <div className="flex-shrink-0 bg-black p-2 cursor-pointer">
           <Link to="/">
@@ -62,7 +64,12 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-8 font-lufga font-medium text-[18px] leading-[130%] relative">
+        <nav
+          className={`hidden md:flex space-x-8 font-lufga font-medium text-[18px] leading-[130%] relative ${['/', '/features', '/hireus', '/aboutus'].includes(location.pathname)
+            ? 'text-white'
+            : 'text-black'
+            }`}
+        >
           {navItems.map((item) =>
             item.submenu ? (
               <div className="relative group" key={item.label}>
@@ -72,12 +79,13 @@ const Header = () => {
                   {item.label}
                   <ChevronDown className="transition-transform duration-200 group-hover:rotate-180" size={16} />
                 </span>
-                <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-200 z-50">
+                <div className="absolute left-0 mt-2 w-56 bg-black text-white shadow-lg opacity-0 
+                group-hover:opacity-90 invisible group-hover:visible transition duration-200 z-50">
                   {item.submenu.map((subItem) => (
                     <Link
                       key={subItem.path}
                       to={subItem.path}
-                      className="block px-4 py-2 hover:bg-gray-200"
+                      className="block px-4 py-2 hover:text-gray-300 hover:scale-105 transform transition-all duration-200"
                     >
                       {subItem.label}
                     </Link>
@@ -100,19 +108,28 @@ const Header = () => {
         <div className="hidden md:block">
           <Link
             to="/contact"
-            className={`inline-flex items-center text-[18px] font-medium border-black hover:opacity-80 ${isActive('/contact') ? 'underline underline-offset-4' : ''}`}
+            className={`inline-flex items-center text-[18px] font-medium hover:opacity-80 border-black group transition-colors ${['/', '/features', '/hireus', '/aboutus'].includes(location.pathname)
+              ? 'text-white'
+              : 'text-black'
+              } ${isActive('/contact') ? 'underline underline-offset-4' : ''}`}
           >
-            Lets talk ↗
+            Let's talk
+            <span className="ml-1 inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+              ↗
+            </span>
           </Link>
         </div>
 
-        {/* Mobile Menu Toggle */}
+
+        {/* ✅ Mobile Menu Toggle (Updated Here) */}
         <button
           className="md:hidden px-4 z-50"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          {menuOpen
+            ? <X size={24} className={isWhitePath ? 'text-white' : 'text-black'} />
+            : <Menu size={24} className={isWhitePath ? 'text-white' : 'text-black'} />}
         </button>
       </div>
 
@@ -126,25 +143,24 @@ const Header = () => {
 
       {/* Mobile Sidebar Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-[80%] max-w-xs bg-white text-black z-50 transform transition-transform duration-300 ease-in-out ${
-          menuOpen ? 'translate-x-0' : '-translate-x-full'
-        } md:hidden`}
+        className={`fixed top-0 left-0 h-full w-[80%] max-w-xs bg-white text-black z-50 transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : '-translate-x-full'
+          } md:hidden`}
       >
         <div className="relative flex flex-col px-6 pt-20 gap-4 text-base font-medium">
           {/* Close Icon */}
-          <button
+          {/* <button
             className="absolute top-4 right-4"
             onClick={() => setMenuOpen(false)}
             aria-label="Close menu"
           >
-            <X size={24} />
-          </button>
+            <X size={34} />
+          </button> */}
 
           {navItems.map((item) =>
             item.submenu ? (
               <div key={item.label} className="relative" ref={submenuRef}>
                 <div
-                  className="hover:opacity-75 cursor-pointer flex items-center justify-between"
+                  className="hover:opacity-75  cursor-pointer flex items-center justify-between"
                   onClick={() => setMobileSubmenuOpen(!mobileSubmenuOpen)}
                 >
                   <span>{item.label}</span>
@@ -188,14 +204,19 @@ const Header = () => {
 
           <Link
             to="/contact"
-            className={`inline-flex items-center ${isActive('/contact') ? 'underline underline-offset-4' : ''}`}
+            className={`inline-flex items-center group transition-colors ${isActive('/contact') ? 'underline underline-offset-4' : ''
+              }`}
             onClick={() => {
               setMenuOpen(false);
               setMobileSubmenuOpen(false);
             }}
           >
-            Lets talk <span className="ml-1">↗</span>
+            Let’s talk
+            <span className="ml-1 inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+              ↗
+            </span>
           </Link>
+
 
           <div className="mt-12 flex">
             <div className="font-medium text-5xl sm:text-6xl md:text-[100px] bg-gradient-to-b from-black to-white bg-clip-text text-transparent text-center">
